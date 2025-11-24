@@ -1,108 +1,39 @@
-# Comprehensive .gitignore template for AI-generated projects
-# Covers most common languages, frameworks, and tools
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# ===== GENERAL =====
-# OS generated files
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-*~
+*.pem
 
-# Editor directories and files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# ===== NODE.JS / JAVASCRIPT =====
-# Dependencies
-node_modules/
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
-pnpm-debug.log*
 
-# Package manager lock files
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-.pnpm-store/
+# local env files
+.env*.local
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# vercel
+.vercel
 
-# Coverage directory used by tools like istanbul
-coverage/
-*.lcov
-
-# nyc test coverage
-.nyc_output
-
-# Grunt intermediate storage
-.grunt
-
-# Bower dependency directory
-bower_components
-
-# node-waf configuration
-.lock-wscript
-
-# Compiled binary addons
-build/Release
-
-# Dependency directories
-jspm_packages/
-
-# TypeScript cache
+# typescript
 *.tsbuildinfo
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Microbundle cache
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# dotenv environment variables file
-.env
-.env.test
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# parcel-bundler cache
-.cache
-.parcel-cache
-
-# Next.js build output
-.next/
-.next
-out/
-.vercel/
+next-env.d.ts
 
 # Nuxt.js build / generate output
 .nuxt/
